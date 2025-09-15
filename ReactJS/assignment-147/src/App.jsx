@@ -5,9 +5,21 @@ import './App.css'
 
 function App() {
  
+  const name = `chandrakant`;
+
+  const welcome = (userName) => `Hello, ${userName}`;
+
+  // const isLoggedIn = true;
+
+  // const fruit = [`Apple`, "Banana", "Cherry"];
+
   return (
-    <>
-      <div></div>
+    <> 
+      <div>
+        <h1>{name}</h1>
+
+        <p>{ welcome(name)}</p>
+      </div>
       
     </>
   )
