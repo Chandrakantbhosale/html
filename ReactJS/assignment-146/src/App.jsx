@@ -1,12 +1,24 @@
-import './App.css'
+import React from "react";
 
-function App() {
-  
-  return (
-    <>
-  <h1>Welcome to React Js, functional component</h1>      
-    </>
-  )
+export default class App extends React.Component {
+    constructor(){
+      super();
+  }
+
+  render() {
+    return (
+     <>
+   <h1>Welcome to React Js, functional component</h1>      
+     </>
+   )
+  }
 }
 
-export default App
+// export default function Welcome() {
+  
+//   return (
+//     <>
+//   <h1>Welcome to React Js, functional component</h1>      
+//     </>
+//   )
+// }
