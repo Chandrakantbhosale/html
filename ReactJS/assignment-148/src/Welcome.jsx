@@ -1,14 +1,20 @@
 import React from "react";
-import childComponent from "./childComponent";
+import ChildComponent from "./childComponent"; // Capitalize the import
 
 export default function Welcome(props) {
     return (
         <>
-            <h1>Hello, chandrakant</h1>
-            <childComponent firstName = "Virat" />
+            <h1>Hello, welcome React JS assignment 148</h1>
+            <ChildComponent  />
+            return <p>Welcome, {props.firstName} {props.lastName}!</p>;
         </>
     );
 }
+
+
+
+
+
 
 // export default class Welcome extends React.Component {
 //     constructor(props) {
