@@ -6,6 +6,6 @@ import Welcome from './Welcome.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Welcome firstName = "Virat" lastName = "Kohli" />
+    <Welcome/>
   </StrictMode>,
 )
