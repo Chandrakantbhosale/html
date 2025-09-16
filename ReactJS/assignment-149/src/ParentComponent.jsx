@@ -7,6 +7,8 @@ export default function ParentComponent() {
     const age = 33;
     const proffession= "cricket";
 
+    
+
     return (
         <div>
             <h1>This is the Parent Component</h1>
