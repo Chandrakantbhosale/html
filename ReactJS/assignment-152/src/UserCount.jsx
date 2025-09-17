@@ -9,35 +9,38 @@ function ChildComponent() {
     useEffect( function() {
 
         fetch("https://jsonplaceholder.typicode.com/users")
-        .then(httpResponce => httpResponce)
+        .then(httpResponce => httpResponce.json())
         .then((resp) => {
             setData(resp);
+            console.log(resp);
             setLoading(false);
         })
         .catch(error => console.log(error));
-    }, [data])
+    }, [])
     
-
-    return (
+    return(
         <>
-            {
-                loading ? (<p>Loading...</p>):
-                data.map(function(item){
-                    
-                })
-
-                
-            }
+        {loading ? "Loading..." : 
+        (
+              <ul>
+                {data.map(function (item, index){
+                    return (
+                        <li key={index}>
+                            {item.name} {item.email}
+                        </li>
+                    );
+                })}
+            </ul>
+        )
+        }       
         </>
     )
 }
 
 export default function Welcome() {
-
     return (
         <>
-            <ChildComponent />
-            
+            <ChildComponent />         
         </>
     )
 }
