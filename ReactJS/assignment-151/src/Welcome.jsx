@@ -2,8 +2,8 @@ import { useState } from "react";
 
 function ChildComponent() {
 
-    const [count, setCount] = useState(0);
-    console.log("child component re-rendered...!!!")
+    const [count, setCount] = useState(0); 
+
     return (
         <>
             <p>count is {count}</p>
