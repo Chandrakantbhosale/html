@@ -9,10 +9,10 @@ export default function Welcome() {
     setUser("Rohit Sharma");
   };
     return (
-        <>
+        <div>
         <p>Implement the useState in both functional component and class component - 150</p>
             <h2>Welcome, To UseState {user} !</h2>
             <button onClick={changeUser}>Change Name</button>
-        </>
+        </div>
     )
 }
